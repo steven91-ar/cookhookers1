@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Esteban&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// @import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
+// @import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --colorWhite : #FFFFFF;
+    --colorbrownlight : #c49a79;
+    --hoverColor : #000080;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Esteban', serif;
+}
+
+.text-white {
+    color: var(--colorWhite);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hover:active, .hover:focus, .hover:hover {
+    color: var(--colorWhite);
+    background-color: var(--colorbrownlight);
+}
+
+.header-style{
+    background-color: var(--colorbrownlight);
+    margin: 0;
+    padding: 0;
+}

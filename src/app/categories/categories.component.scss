@@ -1,0 +1,29 @@
+.btn-text-black:hover {
+    color: white;
+  }
+
+  .bg-light-purple {
+    background-color: #dae0ef;
+  }
+
+  .background-color {
+    background-color:var(--colorbrownlight);
+  }
+
+  .padding-inline-buttons {
+    padding-inline: 3rem;
+  }
+
+  .padding-inline-button {
+    padding-inline: 2rem;
+  }
+
+  .row {
+    --bs-gutter-x: -16.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}

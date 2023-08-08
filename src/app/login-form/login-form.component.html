@@ -1,0 +1,56 @@
+<div
+  class="container d-flex flex-column justify-content-center align-items-center"
+>
+  <h2 class="mb-3">Connectez-vous</h2>
+  <div class="row form-card">
+    <form
+      (ngSubmit)="connexion.valid && onSubmitForm()"
+      [formGroup]="connexion"
+      #myForm="ngForm"
+    >
+      <div class="col-6 form-group mb-4">
+        <label for="email exampleFormControlInput1">Email : </label>
+        <input
+          type="email"
+          name="email"
+          id="email exampleFormControlInput1"
+          formControlName="email"
+          placeholder="Email"
+          class="form-control"
+        />
+        <div *ngIf="connexion.controls['email'].errors">
+          <span *ngIf="connexion.controls['email'].errors?.['required']"
+            >Le champ "email" est requis</span
+          >
+        </div>
+      </div>
+      <div class="col-6 form-group mb-4">
+        <label for="pwd exampleFormControlInput1">Mot de passe : </label>
+        <input
+          type="password"
+          name="pwd"
+          id="pwd exampleFormControlInput1"
+          formControlName="pwd"
+          placeholder="Entrez un mot de passe"
+          class="form-control"
+        />
+        <div *ngIf="connexion.controls['pwd'].errors">
+          <span *ngIf="connexion.controls['pwd'].errors?.['required']"
+            >Le champ "password" est requis</span
+          >
+        </div>
+      </div>
+      <div class="col-6 form-group mb-3">
+        <button
+          btn
+          btn-primary
+          type="submit"
+          [disabled]="!connexion.valid"
+          (click)="onSubmitForm()"
+        >
+          Soumettre
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

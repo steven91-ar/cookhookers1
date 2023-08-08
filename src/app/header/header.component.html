@@ -1,0 +1,118 @@
+<div class="container text-white">
+  <div class="box">
+    <div class="headerNamePage">
+      <h2 class="ms-3">{{ getPageTitle() }}</h2>
+    </div>
+
+    <div class="headerTitle">
+      <h1>Cook's Hook</h1>
+    </div>
+  </div>
+  <div class="headerNav">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid text-white">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                routerLink="/allRecipes"
+                routerLinkActive="active"
+                >Toutes les recettes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/search" routerLinkActive="active"
+                >Recherche Avancée</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Recette
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    routerLink="/allRecipes/entrees"
+                    routerLinkActive="active"
+                    >Entrées</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    routerLink="/allRecipes/sides"
+                    routerLinkActive="active"
+                    >Plat Principal</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    routerLink="/allRecipes/desserts"
+                    routerLinkActive="active"
+                    >Desserts</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    routerLink="/allRecipes/autres"
+                    routerLinkActive="active"
+                    >Autres</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/signin" routerLinkActive="active"
+                >S'inscrire</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                routerLink="/about"
+                routerLinkActive="active"
+                ><i class="fas fa-regular fa-user fa-2xl"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#" *ngIf="isUserLoggedIn"
+                    >Mon profil</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" *ngIf="isUserLoggedIn"
+                    >Déconnexion</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    routerLink="/login"
+                    routerLinkActive="active"
+                    >Se connecter</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.Footer {
+    padding: 1px;
+    margin: 0;
+    text-align: center;
+    border: 5px;
+    width: 100%;
+    bottom: 0;
+    min-height: 10vh;
+    position: fixed;
+}
+
+.footerTitle {
+    padding-top: 0.8rem;
+}
+
+.padding {
+    padding-top: 1.6rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container{
+    box-sizing: border-box;
+    background-color: var(--colorbrownlight);
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.arran {
+    display: inline-flex;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+
+.social-icon {
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.social-icons a {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.fa-facebook {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #322f30;
+    margin: 10px;
+}
+
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+
+.fa-linkedin {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #322f30;
+    margin: 10px;
+}
+
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}

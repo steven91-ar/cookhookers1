@@ -1,0 +1,35 @@
+.mb-4 {
+    margin-bottom: 3.5rem !important;
+    margin-top: 3.5rem;
+}
+
+.btn-text-black:hover {
+    color: white;
+  }
+
+  .bg-light-purple {
+    background-color: #dae0ef;
+  }
+
+  .list-inline li {
+    display: inline;
+    margin-right: 15rem;
+  }
+
+  .background-color {
+    background-color:var(--colorbrownlight);
+  }
+
+  input:invalid ~ span:after {
+    content: '✖';
+    padding-left: 5px;
+    padding-top: 0.3rem;
+    position: absolute;
+  }
+  
+  input:valid ~ span:after {
+    content: '✓';
+    padding-left: 5px;
+    padding-top: 0.3rem;
+    position: absolute
+  }

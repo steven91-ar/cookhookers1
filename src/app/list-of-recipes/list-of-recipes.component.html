@@ -1,0 +1,26 @@
+<!-- <app-search (searchTextChanged)="onSearchTextEntred($event)"></app-search> -->
+<app-search></app-search>
+<app-categories (cat)="showCatMeals($event)"></app-categories>
+<div class="container">
+  <div class="row card col-4">
+    <div
+      class="card-header header-style text-center col d-flex flex-row justify-content-center"
+    >
+      Par lettre
+    </div>
+    <div class="card-body">
+      <span
+        (click)="showRecipeByLetter(letter)"
+        class="mx-3 cursor-pointer hover"
+        *ngFor="let letter of letters"
+      >
+        {{ letter }}
+      </span>
+    </div>
+  </div>
+  <div class="container-img">
+    <ng-container *ngFor="let meal of meals">
+      <app-recipe [meal]="meal"></app-recipe>
+    </ng-container>
+  </div>
+</div>

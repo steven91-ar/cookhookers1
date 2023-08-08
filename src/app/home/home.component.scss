@@ -1,0 +1,205 @@
+// .menu-carousel {
+//     display: flex;
+//     justify-content: center;
+// }
+// .carousel {
+//     margin: 20px;
+//     position: relative;
+// }
+// .carousel-inner div {
+//     display: none;
+// }
+// .carousel-inner div.active {
+//     display: block;
+// }
+// .carousel img {
+//     max-width: 100%;
+//     height: auto;
+// }
+// .carousel h2 {
+//     text-align: center;
+// }
+// .carousel h3 {
+//     position: absolute;
+//     bottom: 20px;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     color: #fff;
+//     background-color: rgba(0, 0, 0, 0.7);
+//     padding: 10px;
+//     margin: 0;
+// }
+// .carousel-control-prev,
+// .carousel-control-next {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     color: #fff;
+//     font-size: 24px;
+//     text-decoration: none;
+//     background-color: rgba(0, 0, 0, 0.5);
+//     padding: 10px;
+//     border-radius: 50%;
+// }
+// .carousel-control-prev {
+//     left: 10px;
+// }
+// .carousel-control-next {
+//     right: 10px;
+// }
+#carouselStarter {
+    width: 1000px;
+    height: 250px;
+    left: 46px;
+    top: 60px;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+    background-color: black;
+}
+
+#carouselSide {
+    height: 250px;
+    width: 1000px;
+    left: 46px;
+    top: 90px;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+#carouselDessert {
+    height: 250px;
+    width: 1000px;
+    left: 46px;
+    top: 150px;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+    background-color: black;
+}
+
+#carouselStarter img {
+    width: 800px;
+    max-height: 250px;
+    object-fit: none;
+    border-radius: 10px;
+}
+
+#carouselSide img {
+    width: 800px;
+    max-height: 250px;
+    object-fit: none;
+    border-radius: 10px;
+}
+
+#carouselDessert img {
+    width: 800px;
+    max-height: 250px;
+    object-fit: none;
+    border-radius: 10px;
+}
+
+#carouselStarter h2 {
+    position: absolute;
+    width: 200px;
+    height: 39px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 10px #141414;
+    color: #D9D9D9;
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+}
+
+#carouselSide h2 {
+    position: absolute;
+    width: 200px;
+    height: 39px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 10px #141414;
+    color: #D9D9D9;
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+}
+
+#carouselDessert h2 {
+    position: absolute;
+    width: 200px;
+    height: 39px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 10px #141414;
+    color: #D9D9D9;
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+}
+
+.carouselStarter h2 plat {
+    position: inherit;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    #carouselStarter,
+    #carouselSide,
+    #carouselDessert {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    #carouselStarter h2,
+    #carouselSide h2,
+    #carouselDessert h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    #carouselStarter h2,
+    #carouselSide h2,
+    #carouselDessert h2 {
+        font-size: 20px;
+    }
+}

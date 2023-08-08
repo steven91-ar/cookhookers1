@@ -1,0 +1,16 @@
+<div class="card">
+  <a routerLink="['/detail/:id', meal.idMeal]" routerLinkActive="active">
+    <div class="card-header header-style text-center text-decoration-none">
+      <h6>{{ meal.strMeal }}</h6>
+    </div>
+    <div class="card-body">
+      <img
+        [src]="meal.strMealThumb"
+        class="rounded img-responsive"
+        alt="image of recipe"
+        height="200px"
+        width="200px"
+      />
+    </div>
+  </a>
+</div>

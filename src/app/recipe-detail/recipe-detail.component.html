@@ -1,0 +1,98 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="titre">
+                <h1>{{ recipe.strMeal}}</h1>
+            </div>
+
+
+            <div class="image-video">
+                <img [src]="recipe.strMealThumb" alt="">
+            </div>
+            <div class="ingredients">
+                <h2>Ingrédients</h2>
+
+                <table class="table table-warning table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Ingredient</th>
+                            <th scope="col">Quantité</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngIf="recipe.strIngredient1">
+                            <td>{{recipe.strIngredient1}}</td>
+                            <td>{{recipe.strMeasure1}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.strIngredient2">
+                            <td>{{recipe.strIngredient2}}</td>
+                            <td>{{recipe.strMeasure2}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.strIngredient3">
+                            <td>{{recipe.strIngredient3}}</td>
+                            <td>{{recipe.strMeasure3}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.strIngredient4">
+                            <td>{{recipe.strIngredient4}}</td>
+                            <td>{{recipe.strMeasure4}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.strIngredient5">
+                            <td>{{recipe.strIngredient5}}</td>
+                            <td>{{recipe.strMeasure5}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.strIngredient6">
+                            <td>{{recipe.strIngredient6}}</td>
+                            <td>{{recipe.strMeasure6}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.strIngredient7">
+                            <td>{{recipe.strIngredient7}}</td>
+                            <td>{{recipe.strMeasure7}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.strIngredient8">
+                            <td>{{recipe.strIngredient8}}</td>
+                            <td>{{recipe.strMeasure8}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.strIngredient9">
+                            <td>{{recipe.strIngredient9}}</td>
+                            <td>{{recipe.strMeasure9}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.strIngredient10">
+                            <td>{{recipe.strIngredient10}}</td>
+                            <td>{{recipe.strMeasure10}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.strIngredient11">
+                            <td>{{recipe.strIngredient11}}</td>
+                            <td>{{recipe.strMeasure11}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.strIngredient12">
+                            <td>{{recipe.strIngredient12}}</td>
+                            <td>{{recipe.strMeasure12}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.strIngredient13">
+                            <td>{{recipe.strIngredient13}}</td>
+                            <td>{{recipe.strMeasure13}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.ingredient14">
+                            <td>{{recipe.strIngredient14}}</td>
+                            <td>{{recipe.strMeasure14}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.strIngredient15">
+                            <td>{{recipe.strIngredient15}}</td>
+                            <td>{{recipe.strMeasure15}}</td>
+                        </tr>
+                        <tr *ngIf="recipe.strIngredient16">
+                            <td>{{recipe.strIngredient16}}</td>
+                            <td>{{recipe.strMeasure16}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+            <div class="description">
+                <h2>Description</h2>
+                <p>{{ recipe.strInstructions }}</p>
+            </div>
+        </div>
+    </div>
+</div>
